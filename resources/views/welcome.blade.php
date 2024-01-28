@@ -48,7 +48,7 @@
     <meta name="og:url" property="og:url" content="{{ Request::url() }}" />
     <meta name="og:type" property="og:type" content="website" />
     <meta name="og:image" property="og:image"
-        content="https://res.cloudinary.com/boxity-id/image/upload/v1706416951/meta-cover_juzl1l.png" />
+        content="https://res.cloudinary.com/boxity-id/image/upload/w_1000/q_auto:best/f_auto/w_1000/q_auto:best/f_auto/v1706416951/meta-cover_juzl1l.png" />
     <meta name="og:description" property="og:description"
         content="Investasi Emas Mudah dan Terpercaya Bersama Keemasan yang telah berpengalaman selama lebih dari 10 tahun." />
     <meta name="twitter:card" content="@yield('title') | KeemasanID" />
@@ -56,7 +56,7 @@
     <meta name="twitter:url" property="og:url" content="{{ Request::url() }}" />
     <meta name="twitter:type" property="og:type" content="website" />
     <meta name="twitter:image" property="og:image"
-        content="https://res.cloudinary.com/boxity-id/image/upload/v1706416951/meta-cover_juzl1l.png" />
+        content="https://res.cloudinary.com/boxity-id/image/upload/w_1000/q_auto:best/f_auto/v1706416951/meta-cover_juzl1l.png" />
     <meta name="twitter:description" property="og:description"
         content="Investasi Emas Mudah dan Terpercaya Bersama Keemasan yang telah berpengalaman selama lebih dari 10 tahun." />
     <link rel="canonical" href="{{ Request::url() }}/" />
@@ -137,8 +137,10 @@
       ============================================= -->
                         <div id="logo" class="mx-0 me-lg-5 order-2 order-lg-1">
                             <a href="/">
-                                <img class="logo-default" srcset="keemasan/logo.png, keemasan/logo.png 2x"
-                                    src="keemasan/logo@2x.png" alt="KeemasanID Logo">
+                                <img class="logo-default"
+                                    srcset="https://res.cloudinary.com/boxity-id/image/upload/w_auto/q_auto:best/f_auto/v1706443919/logo_nqbebi.png, https://res.cloudinary.com/boxity-id/image/upload/w_auto/q_auto:best/f_auto/v1706443919/logo_nqbebi.png 2x"
+                                    src="https://res.cloudinary.com/boxity-id/image/upload/w_1000/q_auto:best/f_auto/v1706443919/logo_nqbebi.png"
+                                    alt="KeemasanID Logo">
                             </a>
                         </div><!-- #logo end -->
 

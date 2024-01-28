@@ -1,8 +1,6 @@
 @extends('welcome')
 @section('title', 'Homepage')
 @section('content')
-    <!-- Hero
-                                                                                                                                                                                                              ============================================= -->
     <section id="slider" class="slider-element"
         style="background: #4315412b url('demos/finance/images/hero-bg.png') center bottom no-repeat; background-size: 100% auto;">
 
@@ -43,16 +41,13 @@
 
                 </div>
                 <div class="col-lg-7 dotted-bg">
-                    <img src="keemasan/header.png" alt="Image 1"
-                        class="d-flex align-self-end mt-5 z-1 mx-auto w-75 position-relative">
+                    <img src="https://res.cloudinary.com/boxity-id/image/upload/w_1000/q_auto:best/f_auto/v1706443921/header_plvclz.png"
+                        alt="Image 1" class="d-flex align-self-end mt-5 z-1 mx-auto w-75 position-relative">
                 </div>
             </div>
         </div>
 
     </section>
-
-    <!-- Content
-                                                                                                                                                                                                            ============================================= -->
     <section id="content">
         <div class="content-wrap py-5">
 
