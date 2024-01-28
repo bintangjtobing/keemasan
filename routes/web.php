@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
+use Illuminate\Support\Facades\Http;
 
 Route::view('/', 'home.index');
 Route::view('/kenapa-kami', 'home.why');
@@ -26,4 +27,11 @@ Route::get('/sitemap', function () {
         ->add(Url::create('/berita'))
         ->add(Url::create('/hubungi-kami'));
     $sitemap->writeToFile(public_path('sitemap.xml'));
+});
+Route::get('/proxy-fetch', function () {
+    $response = Http::get('https://www.keemasan.co.id/fetch.php');
+
+    // Forward the headers you need, ensure to not forward sensitive headers
+    return response($response->body())
+        ->header('Content-Type', $response->header('Content-Type'));
 });

@@ -190,7 +190,7 @@
             </div>
             <div class="header-wrap-clone"></div>
         </header><!-- #header end -->
-
+        <div id="notification-area"></div>
         @yield('content')
         <!-- Footer
   ============================================= -->
@@ -318,6 +318,36 @@
                     jQuery(this).removeClass("dark");
                 }
             );
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // JavaScript with jQuery
+        $(document).ready(function() {
+            function fetchNotification() {
+                $.ajax({
+                    url: '/proxy-fetch', // Your Laravel proxy route
+                    type: 'GET',
+                    success: function(data) {
+                        // If there's new data, display it
+                        if (data) {
+                            $('#notification-area').html(data);
+                        }
+                    },
+                    complete: function() {
+                        // Schedule the next request when the current one's complete
+                        setTimeout(fetchNotification, 5000); // Adjust timing as needed
+                    }
+                });
+            }
+
+            // Initialize the polling function
+            fetchNotification();
+            window.setTimeout(function() {
+                $(".alert").fadeTo(500, 0).slideUp(500, function() {
+                    $(this).remove();
+                });
+            }, 4000);
         });
     </script>
 
