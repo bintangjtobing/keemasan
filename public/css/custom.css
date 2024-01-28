@@ -4,3 +4,13 @@
   color: rgba(0,0,0,.5);
   font-weight: lighter;
 }
+.profile-card {
+    padding: 20px;
+  }
+
+  .profile-image {
+    border-radius: 50%; /* Gambar profil menjadi lingkaran */
+    width: 100px; /* Ukuran gambar profil */
+    height: 100px; /* Ukuran gambar profil */
+    object-fit: cover; /* Pastikan gambar tetap proporsional */
+  }

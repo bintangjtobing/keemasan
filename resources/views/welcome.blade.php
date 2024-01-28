@@ -234,23 +234,23 @@
                             <div class="row w-100">
                                 <div class="col-lg-4 col-6">
                                     <ul class="widget_links widget-li-noicon">
-                                        <li class="mb-2 fw-medium"><a href="#">Beranda</a></li>
-                                        <li class="mb-2 fw-medium"><a href="#">Tentang Kami</a></li>
-                                        <li class="mb-2 fw-medium"><a href="#">FAQs</a></li>
+                                        <li class="mb-2 fw-medium"><a href="/">Beranda</a></li>
+                                        <li class="mb-2 fw-medium"><a href="/perusahaan">Tentang Kami</a></li>
+                                        <li class="mb-2 fw-medium"><a href="/faqs">FAQs</a></li>
                                         <li class="mb-2 fw-medium"><a href="#">Dukungan Kami</a></li>
                                     </ul>
                                 </div>
 
                                 <div class="col-lg-4 col-6">
                                     <ul class="widget_links widget-li-noicon">
-                                        <li class="mb-2 fw-medium"><a href="#">Produk Keemasan</a></li>
-                                        <li class="mb-2 fw-medium"><a href="#">Berita Terbaru</a></li>
+                                        <li class="mb-2 fw-medium"><a href="/produk-layanan">Produk Keemasan</a></li>
+                                        <li class="mb-2 fw-medium"><a href="/berita">Berita Terbaru</a></li>
                                     </ul>
                                 </div>
 
                                 <div class="col-lg-4 col-6">
                                     <ul class="widget_links widget-li-noicon">
-                                        <li class="mb-2 fw-medium"><a href="#">Tentang perusahaan</a></li>
+                                        <li class="mb-2 fw-medium"><a href="/perusahaan">Tentang perusahaan</a></li>
                                     </ul>
                                 </div>
                             </div>
