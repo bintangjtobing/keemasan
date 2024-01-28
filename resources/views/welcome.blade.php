@@ -294,32 +294,6 @@
 
     <!-- JavaScripts
  ============================================= -->
-    <script src="js/plugins.min.js"></script>
-    <script src="js/functions.bundle.js"></script>
-
-    <script>
-        jQuery(document).ready(function() {
-            var lastScrollTop = 0;
-            window.addEventListener("scroll", function(event) {
-                var st = jQuery(this).scrollTop();
-                if (st > lastScrollTop) {
-                    jQuery('#header.sticky-on-scrollup').removeClass('show-sticky-onscroll'); // Down Scroll
-                } else {
-                    jQuery('#header.sticky-on-scrollup').addClass('show-sticky-onscroll'); // Up Scroll
-                }
-                lastScrollTop = st;
-            });
-
-            jQuery('.services-grid .feature-box').hover(
-                function() {
-                    jQuery(this).addClass("dark");
-                },
-                function() {
-                    jQuery(this).removeClass("dark");
-                }
-            );
-        });
-    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         // JavaScript with jQuery
@@ -350,6 +324,33 @@
             }, 4000);
         });
     </script>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/functions.bundle.js"></script>
+
+    <script>
+        jQuery(document).ready(function() {
+            var lastScrollTop = 0;
+            window.addEventListener("scroll", function(event) {
+                var st = jQuery(this).scrollTop();
+                if (st > lastScrollTop) {
+                    jQuery('#header.sticky-on-scrollup').removeClass('show-sticky-onscroll'); // Down Scroll
+                } else {
+                    jQuery('#header.sticky-on-scrollup').addClass('show-sticky-onscroll'); // Up Scroll
+                }
+                lastScrollTop = st;
+            });
+
+            jQuery('.services-grid .feature-box').hover(
+                function() {
+                    jQuery(this).addClass("dark");
+                },
+                function() {
+                    jQuery(this).removeClass("dark");
+                }
+            );
+        });
+    </script>
+
 
 </body>
 

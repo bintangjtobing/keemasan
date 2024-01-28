@@ -19,7 +19,7 @@
                             terdepan yang menyediakan produk emas unggulan. Keemasan berkomitmen untuk memberikan manfaat
                             nyata kepada semua konsumen, baik untuk investasi maupun untuk kebutuhan sehari-hari.<br>
                             <br>
-                            <b>Pengembangan PT Kebun Emas Nusantara</b>
+                            <b>Pengembangan PT Kebun Emas Nusantara</b><br>
                             Sejak didirikan, Keemasan telah berkembang pesat. Keemasan telah memiliki jaringan cabang yang
                             tersebar di seluruh Indonesia. Keemasan juga telah bekerja sama dengan berbagai mitra, seperti
                             toko emas tradisional, perbankan, dan perusahaan asuransi.
@@ -27,7 +27,7 @@
                             meluncurkan berbagai produk dan layanan baru, seperti program nyicil emas, gadai emas, dan
                             layanan jual beli emas online.<br>
                             <br>
-                            <b>Visi dan misi PT Kebun Emas Nusantara</b>
+                            <b>Visi dan misi PT Kebun Emas Nusantara</b><br>
                             Visi Keemasan adalah menjadi perusahaan terdepan yang menyediakan produk emas unggulan. Keemasan
                             berkomitmen untuk memberikan produk emas yang berkualitas tinggi, layanan yang terbaik, dan
                             harga yang kompetitif.<br>
