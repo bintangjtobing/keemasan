@@ -18,19 +18,19 @@
         rel="stylesheet">
 
     <!-- Core Style -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{!! asset('style.css?' . rand(10000, 99999)) !!}">
 
     <!-- Font Icons -->
-    <link rel="stylesheet" href="css/font-icons.css">
+    <link rel="stylesheet" href="{!! asset('css/font-icons.css?' . rand(10000, 99999)) !!}">
 
     <!-- Plugins/Components CSS -->
-    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="{!! asset('css/swiper.css?' . rand(10000, 99999)) !!}">
 
     <!-- Niche Demos -->
-    <link rel="stylesheet" href="demos/finance/finance.css">
+    <link rel="stylesheet" href="{!! asset('demos/finance/finance.css?' . rand(10000, 99999)) !!}">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="{!! asset('css/custom.css?' . rand(10000, 99999)) !!}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
 
@@ -324,8 +324,8 @@
             }, 4000);
         });
     </script>
-    <script src="js/plugins.min.js"></script>
-    <script src="js/functions.bundle.js"></script>
+    <script src="{!! asset('js/plugins.min.js?' . rand(10000, 99999)) !!}"></script>
+    <script src="{!! asset('js/functions.bundle.js?' . rand(10000, 99999)) !!}"></script>
 
     <script>
         jQuery(document).ready(function() {
