@@ -8,6 +8,8 @@
     <meta name="author" content="Boxity Central Indonesia">
     <meta name="description"
         content="Investasi Emas Mudah dan Terpercaya Bersama Keemasan yang telah berpengalaman selama lebih dari 10 tahun.">
+    <meta name="keyword"
+        content="gold investment, keemasanid, investasi emas, gadai emas, kebun emas, sewa kebun emas, KEEMASAN, umroh dan haji, emas jadi umroh, harga emas terbaru">
     <meta name="url" content="{{ Request::url() }}">
     <meta name="identifier-URL" content="{{ Request::url() }}">
 
