@@ -28,7 +28,7 @@
 
                         <div class="row align-items-stretch col-mb-50 mb-0">
                             <!-- Contact Form
-                                                                    ============================================= -->
+                                                                        ============================================= -->
                             <div class="col-lg-6">
 
                                 <div class="fancy-title title-border">
@@ -105,7 +105,7 @@
                             </div><!-- Contact Form End -->
 
                             <!-- Google Map
-                                                                    ============================================= -->
+                                                                        ============================================= -->
                             <div class="col-lg-6 min-vh-50">
                                 {{-- <div class="gmap h-100" data-address="Melbourne, Australia"
                                     data-markers='[{address: "Melbourne, Australia", html: "<div class=\"p-2\" style=\"width: 300px;\"><h4 class=\"mb-2\">Hi! We are <span>Envato!</span></h4><p class=\"mb-0\" style=\"font-size:1rem;\">Our mission is to help people to <strong>earn</strong> and to <strong>learn</strong> online. We operate <strong>marketplaces</strong> where hundreds of thousands of people buy and sell digital goods every day.</p></div>", icon:{ image: "images/icons/map-icon-red.png", iconsize: [32, 39], iconanchor: [32,39] } }]'>
@@ -118,7 +118,7 @@
                         </div>
 
                         <!-- Contact Info
-                                                                ============================================= -->
+                                                                    ============================================= -->
                         <div class="row col-mb-50">
                             <div class="col-sm-6 col-lg-6">
                                 <div class="feature-box fbox-center fbox-bg fbox-plain">
@@ -149,21 +149,7 @@
 
             <div class="clear"></div>
 
-            <div class="container mt-6 dotted-bg rounded-6" style="background-color: #4315411b;">
-                <div class="row align-items-center justify-content-between p-5 p-md-6">
-                    <div class="col mb-5 mb-lg-0">
-                        <h2 class="font-body h1 mb-0">#InvestasiMudah dan terpercaya Bersama KEEMASANID</h2>
-                    </div>
-                    <div class="col-auto">
-                        <a href="#" class="btn px-3 py-2 px-md-5 py-md-3 btn-dark bg-color rounded-pill"><i
-                                class="bi-calendar color-2 me-2 position-relative" style="top: 1px"></i>Book a
-                            Schedule</a>
-                        <a href="/hubungi-kami" class="btn px-3 py-2 px-md-5 py-md-3 bg-color-2 rounded-pill ms-2"><i
-                                class="bi-envelope color me-2 position-relative" style="top: 1px"></i>Contact
-                            Us</a>
-                    </div>
-                </div>
-            </div>
+            @include('partials.CTA')
 
         </div>
     </section><!-- #content end -->
