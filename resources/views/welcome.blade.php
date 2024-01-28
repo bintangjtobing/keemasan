@@ -164,10 +164,12 @@
                         <nav class="primary-menu me-lg-auto with-arrows order-12 order-lg-2">
 
                             <ul class="menu-container">
-                                <li class="menu-item current"><a class="menu-link" href="/kenapa-kami">
+                                <li class="menu-item {{ Route::is('kenapaKami') ? 'active' : '' }}"><a
+                                        class="menu-link" href="/kenapa-kami">
                                         <div>Kenapa Kami?</div>
                                     </a></li>
-                                <li class="menu-item"><a class="menu-link" href="/produk-layanan">
+                                <li class="menu-item {{ Route::is('produk') ? 'active' : '' }}"><a class="menu-link"
+                                        href="/produk-layanan">
                                         <div>Produk dan Layanan</div>
                                     </a>
                                     <ul class="sub-menu-container">
@@ -179,10 +181,12 @@
                                             </a></li>
                                     </ul>
                                 </li>
-                                <li class="menu-item"><a class="menu-link" href="/perusahaan">
+                                <li class="menu-item {{ Route::is('perusahaan') ? 'active' : '' }}"><a
+                                        class="menu-link" href="/perusahaan">
                                         <div>Perusahaan</div>
                                     </a></li>
-                                <li class="menu-item"><a class="menu-link" href="/berita">
+                                <li class="menu-item {{ Route::is('berita') ? 'active' : '' }}"><a class="menu-link"
+                                        href="/berita">
                                         <div>Berita</div>
                                     </a></li>
                             </ul>

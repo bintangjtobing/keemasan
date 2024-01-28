@@ -7,10 +7,10 @@ use Spatie\Sitemap\Tags\Url;
 use Illuminate\Support\Facades\Http;
 
 Route::view('/', 'home.index');
-Route::view('/kenapa-kami', 'home.why');
-Route::view('/produk-layanan', 'home.product');
-Route::view('/perusahaan', 'home.company');
-Route::view('/berita', 'home.news');
+Route::view('/kenapa-kami', 'home.why')->name('kenapaKami');
+Route::view('/produk-layanan', 'home.product')->name('produk');
+Route::view('/perusahaan', 'home.company')->name('perusahaan');
+Route::view('/berita', 'home.news')->name('berita');
 Route::view('/hubungi-kami', 'home.contact');
 Route::view('/faqs', 'home.faqs');
 
