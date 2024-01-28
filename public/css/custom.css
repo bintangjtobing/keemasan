@@ -19,11 +19,11 @@
     top: 20px;
     right: 20px;
     z-index: 9999;
-    border-left: 4px solid #5cb85c; /* Green border for success */
-    background-color: #dff0d8; /* Light green background for success */
-    color: #3c763d; /* Dark green text for success */
-    padding: 10px;
-    border-radius: 5px;
+    border-left: 4px solid #431541; /* Green border for success */
+    background-color: #f8dda9; /* Light green background for success */
+    color: #431541; /* Dark green text for success */
+    padding: 1rem 3rem 1rem 10px;
+    border-radius: .25rem;
     box-shadow: 0 2px 4px rgba(0,0,0,.2); /* Optional: adds a shadow to the alert */
     animation: slideDownFade 0.5s ease-in-out forwards;
   }
