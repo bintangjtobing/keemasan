@@ -2,7 +2,7 @@
 @section('title', 'Homepage')
 @section('content')
     <!-- Hero
-                  ============================================= -->
+                                                                                                                                                                                                      ============================================= -->
     <section id="slider" class="slider-element"
         style="background: #4315412b url('demos/finance/images/hero-bg.png') center bottom no-repeat; background-size: 100% auto;">
 
@@ -52,7 +52,7 @@
     </section>
 
     <!-- Content
-                ============================================= -->
+                                                                                                                                                                                                    ============================================= -->
     <section id="content">
         <div class="content-wrap py-5">
 
@@ -250,224 +250,106 @@
                 </div>
             </div>
 
-            <div class="section bg-color" style="padding: 100px; 0;">
+            <div class="section dark bg-color" style="padding: 40px; 0;">
                 <div class="container">
                     <div class="heading-block mw-xs mx-auto text-center mb-6">
-                        <h3 class="color-2 text-transform-none ls-0">#KeemasanShop</h3>
-                        <h5 class="font-body text-white text-uppercase ls-2">Layanan jual beli emas dari
+                        <h5 class="font-body text-uppercase ls-2 color-2">#KeemasanShop</h5>
+                        <h3 class="text-white text-transform-none ls-0">Layanan jual beli emas dari
                             Keemasan,
-                            silahkan pilih paket emas yang Anda inginkan.</h5>
+                            silahkan pilih paket emas yang Anda inginkan.</h3>
                     </div>
+                </div>
+                <div class="container-fluid">
                     <div id="oc-portfolio" class="owl-carousel portfolio-carousel carousel-widget" data-pagi="false"
                         data-items-xs="1" data-items-sm="2" data-items-md="3" data-items-lg="4">
-                        <div class="card border-0 shadow-lg p-2">
-                            <div class="card-body">
-                                <div class="portfolio-item">
-                                    <div class="portfolio-image">
-                                        <a href="#">
-                                            <img src="demos/finance/images/shop/1.jpg" alt="Emas Logam Mulia">
-                                        </a>
-                                        <div class="bg-overlay">
-                                            <div class="bg-overlay-content dark" data-hover-animate="fadeIn"
-                                                data-hover-speed="350">
-                                                <a href="demos/finance/images/shop/1.jpg"
-                                                    class="overlay-trigger-icon bg-light text-dark"
-                                                    data-hover-animate="fadeInDownSmall"
-                                                    data-hover-animate-out="fadeInUpSmall" data-hover-speed="350"
-                                                    data-lightbox="image"><i class="uil uil-plus"></i></a>
-                                            </div>
-                                            <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"
-                                                data-hover-speed="350"></div>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-desc">
-                                        <h3><a href="#">Emas Logam Mulia</a></h3>
-                                        <span><a href="#">1gr</a></span>
-                                        <a href="#"
-                                            class="btn text-small btn-dark btn-block bg-color px-4 py-2 rounded-pill my-2"><i
-                                                class="bi-basket color-2 ms-1"></i>&nbsp;Buy <b>IDR
-                                                1.110.000</b></a>
-                                        <a href="#"
-                                            class="btn text-small btn-light btn-block bg-light px-4 py-2 rounded-pill"><i
-                                                class="bi-minecart-loaded light-2 ms-1"></i>&nbsp;Sell <b>IDR
-                                                990.000</b></a>
-                                    </div>
-                                </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="demos/finance/images/shop/1.jpg" alt="Product Image">
+                            </div>
+                            <div class="card-container">
+                                <h4 class="card-title">Emas Logam Mulia 1gr</h4>
+                                <button href="#" class="card-button buy-button"><i
+                                        class="bi-basket color-2 ms-1"></i>
+                                    Buy at IDR
+                                    1.110.000</button>
+                                <button href="#" class="card-button sell-button"><i
+                                        class="bi-minecart-loaded color ms-1"></i>
+                                    Sell at IDR 990.000</button>
                             </div>
                         </div>
-                        <div class="card border-0 shadow-lg p-2">
-                            <div class="card-body">
-                                <div class="portfolio-item">
-                                    <div class="portfolio-image">
-                                        <a href="#">
-                                            <img src="demos/finance/images/shop/2.jpg" alt="Emas Logam Mulia">
-                                        </a>
-                                        <div class="bg-overlay">
-                                            <div class="bg-overlay-content dark" data-hover-animate="fadeIn"
-                                                data-hover-speed="350">
-                                                <a href="demos/finance/images/shop/2.jpg"
-                                                    class="overlay-trigger-icon bg-light text-dark"
-                                                    data-hover-animate="fadeInDownSmall"
-                                                    data-hover-animate-out="fadeInUpSmall" data-hover-speed="350"
-                                                    data-lightbox="image"><i class="uil uil-plus"></i></a>
-                                            </div>
-                                            <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"
-                                                data-hover-speed="350"></div>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-desc">
-                                        <h3><a href="#">Emas Logam Mulia</a></h3>
-                                        <span><a href="#">2gr</a></span>
-                                        <a href="#"
-                                            class="btn text-small btn-dark btn-block bg-color px-4 py-2 rounded-pill my-2"><i
-                                                class="bi-basket color-2 ms-1"></i>&nbsp;Buy <b>IDR
-                                                2.155.000</b></a>
-                                        <a href="#"
-                                            class="btn text-small btn-light btn-block bg-light px-4 py-2 rounded-pill"><i
-                                                class="bi-minecart-loaded light-2 ms-1"></i>&nbsp;Sell <b>IDR
-                                                1.980.000</b></a>
-                                    </div>
-                                </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="demos/finance/images/shop/2.jpg" alt="Product Image">
+                            </div>
+                            <div class="card-container">
+                                <h4 class="card-title">Emas Logam Mulia 2gr</h4>
+                                <button href="#" class="card-button buy-button"><i
+                                        class="bi-basket color-2 ms-1"></i>
+                                    Buy at IDR
+                                    2.155.000</button>
+                                <button href="#" class="card-button sell-button"><i
+                                        class="bi-minecart-loaded color ms-1"></i>
+                                    Sell at IDR 1.980.000</button>
                             </div>
                         </div>
-                        <div class="card border-0 shadow-lg p-2">
-                            <div class="card-body">
-                                <div class="portfolio-item">
-                                    <div class="portfolio-image">
-                                        <a href="#">
-                                            <img src="demos/finance/images/shop/3.jpg" alt="Emas Logam Mulia">
-                                        </a>
-                                        <div class="bg-overlay">
-                                            <div class="bg-overlay-content dark" data-hover-animate="fadeIn"
-                                                data-hover-speed="350">
-                                                <a href="demos/finance/images/shop/3.jpg"
-                                                    class="overlay-trigger-icon bg-light text-dark"
-                                                    data-hover-animate="fadeInDownSmall"
-                                                    data-hover-animate-out="fadeInUpSmall" data-hover-speed="350"
-                                                    data-lightbox="image"><i class="uil uil-plus"></i></a>
-                                            </div>
-                                            <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"
-                                                data-hover-speed="350"></div>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-desc">
-                                        <h3><a href="#">Emas Logam Mulia</a></h3>
-                                        <span><a href="#">3gr</a></span>
-                                        <a href="#"
-                                            class="btn text-small btn-dark btn-block bg-color px-4 py-2 rounded-pill my-2"><i
-                                                class="bi-basket color-2 ms-1"></i>&nbsp;Buy <b>IDR
-                                                3.200.000</b></a>
-                                        <a href="#"
-                                            class="btn text-small btn-light btn-block bg-light px-4 py-2 rounded-pill"><i
-                                                class="bi-minecart-loaded light-2 ms-1"></i>&nbsp;Sell <b>IDR
-                                                2.970.000</b></a>
-                                    </div>
-                                </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="demos/finance/images/shop/3.jpg" alt="Product Image">
+                            </div>
+                            <div class="card-container">
+                                <h4 class="card-title">Emas Logam Mulia 3gr</h4>
+                                <button href="#" class="card-button buy-button"><i
+                                        class="bi-basket color-2 ms-1"></i>
+                                    Buy at IDR
+                                    3.200.000</button>
+                                <button href="#" class="card-button sell-button"><i
+                                        class="bi-minecart-loaded color ms-1"></i>
+                                    Sell at IDR 2.970.000</button>
                             </div>
                         </div>
-                        <div class="card border-0 shadow-lg p-2">
-                            <div class="card-body">
-                                <div class="portfolio-item">
-                                    <div class="portfolio-image">
-                                        <a href="#">
-                                            <img src="demos/finance/images/shop/5.jpg" alt="Emas Logam Mulia">
-                                        </a>
-                                        <div class="bg-overlay">
-                                            <div class="bg-overlay-content dark" data-hover-animate="fadeIn"
-                                                data-hover-speed="350">
-                                                <a href="demos/finance/images/shop/5.jpg"
-                                                    class="overlay-trigger-icon bg-light text-dark"
-                                                    data-hover-animate="fadeInDownSmall"
-                                                    data-hover-animate-out="fadeInUpSmall" data-hover-speed="350"
-                                                    data-lightbox="image"><i class="uil uil-plus"></i></a>
-                                            </div>
-                                            <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"
-                                                data-hover-speed="350"></div>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-desc">
-                                        <h3><a href="#">Emas Logam Mulia</a></h3>
-                                        <span><a href="#">5gr</a></span>
-                                        <a href="#"
-                                            class="btn text-small btn-dark btn-block bg-color px-4 py-2 rounded-pill my-2"><i
-                                                class="bi-basket color-2 ms-1"></i>&nbsp;Buy <b>IDR
-                                                5.300.000</b></a>
-                                        <a href="#"
-                                            class="btn text-small btn-light btn-block bg-light px-4 py-2 rounded-pill"><i
-                                                class="bi-minecart-loaded light-2 ms-1"></i>&nbsp;Sell <b>IDR
-                                                4.950.000</b></a>
-                                    </div>
-                                </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="demos/finance/images/shop/5.jpg" alt="Product Image">
+                            </div>
+                            <div class="card-container">
+                                <h4 class="card-title">Emas Logam Mulia 5gr</h4>
+                                <button href="#" class="card-button buy-button"><i
+                                        class="bi-basket color-2 ms-1"></i>
+                                    Buy at IDR
+                                    5.300.000</button>
+                                <button href="#" class="card-button sell-button"><i
+                                        class="bi-minecart-loaded color ms-1"></i>
+                                    Sell at IDR 4.950.000</button>
                             </div>
                         </div>
-                        <div class="card border-0 shadow-lg p-2">
-                            <div class="card-body">
-                                <div class="portfolio-item">
-                                    <div class="portfolio-image">
-                                        <a href="#">
-                                            <img src="demos/finance/images/shop/10.jpg" alt="Emas Logam Mulia">
-                                        </a>
-                                        <div class="bg-overlay">
-                                            <div class="bg-overlay-content dark" data-hover-animate="fadeIn"
-                                                data-hover-speed="350">
-                                                <a href="demos/finance/images/shop/10.jpg"
-                                                    class="overlay-trigger-icon bg-light text-dark"
-                                                    data-hover-animate="fadeInDownSmall"
-                                                    data-hover-animate-out="fadeInUpSmall" data-hover-speed="350"
-                                                    data-lightbox="image"><i class="uil uil-plus"></i></a>
-                                            </div>
-                                            <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"
-                                                data-hover-speed="350"></div>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-desc">
-                                        <h3><a href="#">Emas Logam Mulia</a></h3>
-                                        <span><a href="#">10gr</a></span>
-                                        <a href="#"
-                                            class="btn text-small btn-dark btn-block bg-color px-4 py-2 rounded-pill my-2"><i
-                                                class="bi-basket color-2 ms-1"></i>&nbsp;Buy <b>IDR
-                                                10.550.000</b></a>
-                                        <a href="#"
-                                            class="btn text-small btn-light btn-block bg-light px-4 py-2 rounded-pill"><i
-                                                class="bi-minecart-loaded light-2 ms-1"></i>&nbsp;Sell <b>IDR
-                                                9.990.000</b></a>
-                                    </div>
-                                </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="demos/finance/images/shop/10.jpg" alt="Product Image">
+                            </div>
+                            <div class="card-container">
+                                <h4 class="card-title">Emas Logam Mulia 10gr</h4>
+                                <button href="#" class="card-button buy-button"><i
+                                        class="bi-basket color-2 ms-1"></i>
+                                    Buy at IDR
+                                    10.550.000</button>
+                                <button href="#" class="card-button sell-button"><i
+                                        class="bi-minecart-loaded color ms-1"></i>
+                                    Sell at IDR 9.990.000</button>
                             </div>
                         </div>
-                        <div class="card border-0 shadow-lg p-2">
-                            <div class="card-body">
-                                <div class="portfolio-item">
-                                    <div class="portfolio-image">
-                                        <a href="#">
-                                            <img src="demos/finance/images/shop/25.jpg" alt="Emas Logam Mulia">
-                                        </a>
-                                        <div class="bg-overlay">
-                                            <div class="bg-overlay-content dark" data-hover-animate="fadeIn"
-                                                data-hover-speed="350">
-                                                <a href="demos/finance/images/shop/25.jpg"
-                                                    class="overlay-trigger-icon bg-light text-dark"
-                                                    data-hover-animate="fadeInDownSmall"
-                                                    data-hover-animate-out="fadeInUpSmall" data-hover-speed="350"
-                                                    data-lightbox="image"><i class="uil uil-plus"></i></a>
-                                            </div>
-                                            <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"
-                                                data-hover-speed="350"></div>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-desc">
-                                        <h3><a href="#">Emas Logam Mulia</a></h3>
-                                        <span><a href="#">25gr</a></span>
-                                        <a href="#"
-                                            class="btn text-small btn-dark btn-block bg-color px-4 py-2 rounded-pill my-2"><i
-                                                class="bi-basket color-2 ms-1"></i>&nbsp;Buy <b>IDR
-                                                26.300.000</b></a>
-                                        <a href="#"
-                                            class="btn text-small btn-light btn-block bg-light px-4 py-2 rounded-pill"><i
-                                                class="bi-minecart-loaded light-2 ms-1"></i>&nbsp;Sell <b>IDR
-                                                24.750.000</b></a>
-                                    </div>
-                                </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="demos/finance/images/shop/25.jpg" alt="Product Image">
+                            </div>
+                            <div class="card-container">
+                                <h4 class="card-title">Emas Logam Mulia 25gr</h4>
+                                <button href="#" class="card-button buy-button"><i
+                                        class="bi-basket color-2 ms-1"></i>
+                                    Buy at IDR
+                                    26.300.000</button>
+                                <button href="#" class="card-button sell-button"><i
+                                        class="bi-minecart-loaded color ms-1"></i>
+                                    Sell at IDR 24.750.000</button>
                             </div>
                         </div>
                     </div>
@@ -491,142 +373,87 @@
 
                 </ul>
             </div>
-            <div class="section bg-transparent" style="padding: 100px; 0;">
+            <div class="section bg-transparent" style="padding: 40px; 0;">
                 <div class="container">
                     <div class="heading-block mw-xs mx-auto text-center mb-6">
                         <h3 class="text-dark text-transform-none ls-0">Berita Keemasan</h3>
                     </div>
-                </div>
-                <div id="oc-events" class="owl-carousel events-carousel carousel-widget" data-margin="0"
-                    data-pagi="false" data-items="1" data-items-lg="2" data-items-xl="2">
-                    <div class="oc-item">
-                        <article class="entry event p-3">
-                            <div
-                                class="grid-inner bg-contrast-0 row g-0 p-3 border-0 rounded-5 shadow-sm h-shadow all-ts h-translate-y-sm">
-                                <div class="col-12 mb-md-0">
-                                    <a href="#" class="entry-image">
-                                        <img src="https://source.unsplash.com/random/800x450/?umrah"
-                                            alt="Inventore voluptates velit totam ipsa tenetur" class="rounded-2">
-                                        <div class="bg-overlay">
-                                            <div class="bg-overlay-content justify-content-start align-items-start">
-                                                <div class="badge bg-light text-dark rounded-pill">Updates
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
+                    <div id="posts" class="post-grid row gutter-30">
+                        <div class="entry col-lg-4 col-md-4 col-sm-6 col-12">
+                            <div class="grid-inner">
+                                <div class="entry-image">
+                                    <a href="https://keemasan.id/system/images/post/7429f9d7393500d074f10062213dec02.jpg"
+                                        data-lightbox="image"><img
+                                            src="https://keemasan.id/system/images/post/7429f9d7393500d074f10062213dec02.jpg"
+                                            alt="Umroh di masa KeEmasAn"></a>
                                 </div>
-                                <div class="col-12 p-4 pt-0">
-                                    <div class="entry-meta no-separator mb-1 mt-0">
-                                        <ul>
-                                            <li><a href="#" class="text-uppercase fw-medium">Fri, Jan 23 @
-                                                    5:30PM</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="entry-title nott">
-                                        <h3><a href="#">Umroh di masa KeEmasAn</a></h3>
-                                    </div>
-                                    <div class="entry-content my-3">
-                                        <p class="mb-0">Kabar gembira untuk sahabat farmers yang ingin menunaikan
-                                            ibadah umroh.
-                                            Keemasan membuka program umroh dengan bibit emas. Cukup beli bibit emas
-                                            30 bibit setara dengan 30 gram...</p>
-                                    </div>
-
-                                    <div class="entry-meta no-separator">
-                                        <ul>
-                                            <li><a href="#" class="fw-normal"><i class="uil uil-map-marker"></i>
-                                                    Bandung, ID</a></li>
-                                        </ul>
-                                    </div>
+                                <div class="entry-title">
+                                    <h2><a href="#">Umroh di masa KeEmasAn</a></h2>
+                                </div>
+                                <div class="entry-meta">
+                                    <ul>
+                                        <li><i class="uil uil-schedule"></i> 10th Feb 2021</li>
+                                        <li><a href="#"><i class="uil uil-comments-alt"></i>
+                                                13</a></li>
+                                        <li><a href="#"><i class="uil uil-camera"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="entry-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione...</p>
+                                    <a href="#" class="more-link">Read More</a>
                                 </div>
                             </div>
-                        </article>
-                    </div>
-                    <div class="oc-item">
-                        <article class="entry event p-3">
-                            <div
-                                class="grid-inner bg-contrast-0 row g-0 p-3 border-0 rounded-5 shadow-sm h-shadow all-ts h-translate-y-sm">
-                                <div class="col-12 mb-md-0">
-                                    <a href="#" class="entry-image">
-                                        <img src="https://source.unsplash.com/random/800x450/?gold"
-                                            alt="Inventore voluptates velit totam ipsa tenetur" class="rounded-2">
-                                        <div class="bg-overlay">
-                                            <div class="bg-overlay-content justify-content-start align-items-start">
-                                                <div class="badge bg-light text-dark rounded-pill">Updates
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
+                        </div>
+                        <div class="entry col-lg-4 col-md-4 col-sm-6 col-12">
+                            <div class="grid-inner">
+                                <div class="entry-image">
+                                    <a href="https://keemasan.id/system/images/post/c2fef0a841d2fd6fdb940b600d3a08d0.jpg"
+                                        data-lightbox="image"><img
+                                            src="https://keemasan.id/system/images/post/c2fef0a841d2fd6fdb940b600d3a08d0.jpg"
+                                            alt="Begini ramalan Antam soal harga emas 2023"></a>
                                 </div>
-                                <div class="col-12 p-4 pt-0">
-                                    <div class="entry-meta no-separator mb-1 mt-0">
-                                        <ul>
-                                            <li><a href="#" class="text-uppercase fw-medium">Fri, Jan 23 @
-                                                    5:30PM</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="entry-title nott">
-                                        <h3><a href="#">Begini ramalan Antam soal harga emas 2023</a></h3>
-                                    </div>
-                                    <div class="entry-content my-3">
-                                        <p class="mb-0">Di tengah ancaman resesi global, investasi emas
-                                            diperkirakan akan menjadi salah satu primadona...</p>
-                                    </div>
-
-                                    <div class="entry-meta no-separator">
-                                        <ul>
-                                            <li><a href="#" class="fw-normal"><i class="uil uil-map-marker"></i>
-                                                    Bandung, ID</a></li>
-                                        </ul>
-                                    </div>
+                                <div class="entry-title">
+                                    <h2><a href="#">Begini ramalan Antam soal harga emas 2023</a></h2>
+                                </div>
+                                <div class="entry-meta">
+                                    <ul>
+                                        <li><i class="uil uil-schedule"></i> 10th Feb 2021</li>
+                                        <li><a href="#"><i class="uil uil-comments-alt"></i>
+                                                13</a></li>
+                                        <li><a href="#"><i class="uil uil-camera"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="entry-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione...</p>
+                                    <a href="#" class="more-link">Read More</a>
                                 </div>
                             </div>
-                        </article>
-                    </div>
-                    <div class="oc-item">
-                        <article class="entry event p-3">
-                            <div
-                                class="grid-inner bg-contrast-0 row g-0 p-3 border-0 rounded-5 shadow-sm h-shadow all-ts h-translate-y-sm">
-                                <div class="col-12 mb-md-0">
-                                    <a href="#" class="entry-image">
-                                        <img src="https://source.unsplash.com/random/800x450/?fine-gold"
-                                            alt="Inventore voluptates velit totam ipsa tenetur" class="rounded-2">
-                                        <div class="bg-overlay">
-                                            <div class="bg-overlay-content justify-content-start align-items-start">
-                                                <div class="badge bg-light text-dark rounded-pill">Updates
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
+                        </div>
+                        <div class="entry col-lg-4 col-md-4 col-sm-6 col-12">
+                            <div class="grid-inner">
+                                <div class="entry-image">
+                                    <a href="https://keemasan.id/system/images/post/6c306cbb1ad5b43020c7dab28b8a7c5e.jpeg"
+                                        data-lightbox="image"><img
+                                            src="https://keemasan.id/system/images/post/6c306cbb1ad5b43020c7dab28b8a7c5e.jpeg"
+                                            alt="Prediksi harga emas 2024"></a>
                                 </div>
-                                <div class="col-12 p-4 pt-0">
-                                    <div class="entry-meta no-separator mb-1 mt-0">
-                                        <ul>
-                                            <li><a href="#" class="text-uppercase fw-medium">Fri, Jan 23 @
-                                                    5:30PM</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="entry-title nott">
-                                        <h3><a href="#">Prediksi harga emas 2024</a></h3>
-                                    </div>
-                                    <div class="entry-content my-3">
-                                        <p class="mb-0">Harga emas naik 6,5% year-to-date/ytd dengan pergerakan
-                                            harga koreksi lebih rendah dalam beberapa hari terakhir karena
-                                            menguatnya dolar...</p>
-                                    </div>
-
-                                    <div class="entry-meta no-separator">
-                                        <ul>
-                                            <li><a href="#" class="fw-normal"><i class="uil uil-map-marker"></i>
-                                                    Bandung, ID</a></li>
-                                        </ul>
-                                    </div>
+                                <div class="entry-title">
+                                    <h2><a href="#">Prediksi harga emas 2024</a></h2>
+                                </div>
+                                <div class="entry-meta">
+                                    <ul>
+                                        <li><i class="uil uil-schedule"></i> 10th Feb 2021</li>
+                                        <li><a href="#"><i class="uil uil-comments-alt"></i>
+                                                13</a></li>
+                                        <li><a href="#"><i class="uil uil-camera"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="entry-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione...</p>
+                                    <a href="#" class="more-link">Read More</a>
                                 </div>
                             </div>
-                        </article>
+                        </div>
                     </div>
                 </div>
             </div>

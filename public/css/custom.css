@@ -61,3 +61,84 @@
       transform: translateY(0);
     }
   }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0; /* Rounded corners at the top */
+}
+
+.card-container {
+    padding: 2px 16px;
+}
+
+.card-title {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color:#431541;
+}
+
+.card-button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between buttons */
+}
+
+.buy-button {
+    background-color: #431541; /* Green */
+    color: #f8dda9;
+}
+
+.sell-button {
+    background-color: #f8dda9; /* Red */
+    color: #431541;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        margin: 0; /* Remove any margin that might limit the card width */
+        border-radius: 0; /* Optional: Remove border radius for full-width on mobile */
+    }
+
+    .card-title, .card-button {
+        font-size: 12px; /* Adjust font size if needed */
+    }
+
+    .card-button {
+        padding: 12px; /* Increase padding for better touch targets */
+    }
+
+    .text-white, .text-transform-none, .ls-0 {
+        font-size: 1.2rem; /* Adjust font size if needed */
+        font-weight: lighter;
+    }
+
+    /* Adjust padding inside the card-container for mobile view */
+    .card-container {
+        padding: 16px;
+    }
+    .heading-block h3{
+        font-size: 1.8rem;
+    }
+    .entry-title h2, .entry-title .h2, .entry-title h3, .entry-title .h3, .entry-title h4, .entry-title .h4 {
+        font-size: 1.3rem;
+    }
+}
