@@ -2,7 +2,7 @@
 @section('title', 'Homepage')
 @section('content')
     <!-- Hero
-                                                                                                                                                                                                      ============================================= -->
+                                                                                                                                                                                                              ============================================= -->
     <section id="slider" class="slider-element"
         style="background: #4315412b url('demos/finance/images/hero-bg.png') center bottom no-repeat; background-size: 100% auto;">
 
@@ -52,7 +52,7 @@
     </section>
 
     <!-- Content
-                                                                                                                                                                                                    ============================================= -->
+                                                                                                                                                                                                            ============================================= -->
     <section id="content">
         <div class="content-wrap py-5">
 
@@ -356,7 +356,7 @@
                 </div>
             </div>
 
-            <div class="section bg-transparent" style="padding: 100px; 0;">
+            <div class="section bg-transparent" style="padding: 40px; 0;">
                 <div class="container">
                     <div class="heading-block mw-xs mx-auto text-center mb-6">
                         <h3 class="text-dark text-transform-none ls-0">Keemasan Payment Partner</h3>
