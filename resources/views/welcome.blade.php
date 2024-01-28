@@ -274,8 +274,9 @@
                     <div class="row justify-content-between">
 
                         <div class="col"><?php $y = date('Y'); ?>
-                            <span class="text-black-50">&copy;{{ $y }} and All Rights Reserved by
-                                KeemasanID.</span>
+                            <span class="text-black-50">&copy;{{ $y }} Keemasan ID and All Rights Reserved
+                                by
+                                PT Kebun Emas Nusantara.</span>
                         </div>
 
                         <div class="col text-end">
