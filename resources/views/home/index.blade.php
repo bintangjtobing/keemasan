@@ -2,7 +2,7 @@
 @section('title', 'Homepage')
 @section('content')
     <!-- Hero
-          ============================================= -->
+                  ============================================= -->
     <section id="slider" class="slider-element"
         style="background: #4315412b url('demos/finance/images/hero-bg.png') center bottom no-repeat; background-size: 100% auto;">
 
@@ -52,7 +52,7 @@
     </section>
 
     <!-- Content
-        ============================================= -->
+                ============================================= -->
     <section id="content">
         <div class="content-wrap py-5">
 
@@ -242,7 +242,7 @@
                     </div>
                     <div class="row mt-6">
                         <div class="col-12 text-center mt-0 mt-md-4">
-                            <a href="#" class="btn text-larger px-5 py-3 btn-dark bg-color rounded-pill"><i
+                            <a href="/hubungi-kami" class="btn text-larger px-5 py-3 btn-dark bg-color rounded-pill"><i
                                     class="bi-calendar color-2 me-2 position-relative" style="top: 1px"></i>Hubungi
                                 Kami</a>
                         </div>
@@ -641,7 +641,7 @@
                         <a href="#" class="btn px-3 py-2 px-md-5 py-md-3 btn-dark bg-color rounded-pill"><i
                                 class="bi-calendar color-2 me-2 position-relative" style="top: 1px"></i>Book a
                             Schedule</a>
-                        <a href="#" class="btn px-3 py-2 px-md-5 py-md-3 bg-color-2 rounded-pill ms-2"><i
+                        <a href="/hubungi-kami" class="btn px-3 py-2 px-md-5 py-md-3 bg-color-2 rounded-pill ms-2"><i
                                 class="bi-envelope color me-2 position-relative" style="top: 1px"></i>Contact
                             Us</a>
                     </div>

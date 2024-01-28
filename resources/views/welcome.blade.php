@@ -47,14 +47,16 @@
     <meta name="og:title" property="og:title" content="@yield('title') | KeemasanID" />
     <meta name="og:url" property="og:url" content="{{ Request::url() }}" />
     <meta name="og:type" property="og:type" content="website" />
-    <meta name="og:image" property="og:image" content="" />
+    <meta name="og:image" property="og:image"
+        content="https://res.cloudinary.com/boxity-id/image/upload/v1706416951/meta-cover_juzl1l.png" />
     <meta name="og:description" property="og:description"
         content="Investasi Emas Mudah dan Terpercaya Bersama Keemasan yang telah berpengalaman selama lebih dari 10 tahun." />
     <meta name="twitter:card" content="@yield('title') | KeemasanID" />
     <meta name="twitter:title" property="og:title" content="@yield('title') | KeemasanID" />
     <meta name="twitter:url" property="og:url" content="{{ Request::url() }}" />
     <meta name="twitter:type" property="og:type" content="website" />
-    <meta name="twitter:image" property="og:image" content="" />
+    <meta name="twitter:image" property="og:image"
+        content="https://res.cloudinary.com/boxity-id/image/upload/v1706416951/meta-cover_juzl1l.png" />
     <meta name="twitter:description" property="og:description"
         content="Investasi Emas Mudah dan Terpercaya Bersama Keemasan yang telah berpengalaman selama lebih dari 10 tahun." />
     <link rel="canonical" href="{{ Request::url() }}/" />
@@ -91,11 +93,11 @@
       ============================================= -->
                         <div class="top-links">
                             <ul class="top-links-container">
-                                <li class="top-links-item"><a href="index.html"><i class="color-2 bi-globe"></i>
+                                <li class="top-links-item"><a href="#"><i class="color-2 bi-globe"></i>
                                         Indonesia</a>
-                                    <ul class="top-links-sub-menu bg-color">
+                                    {{-- <ul class="top-links-sub-menu bg-color">
                                         <li class="top-links-item"><a href="#">English</a></li>
-                                    </ul>
+                                    </ul> --}}
                                 </li>
                             </ul>
                         </div><!-- .top-links end -->
@@ -147,7 +149,8 @@
                         </div>
 
                         <div class="header-misc order-3">
-                            <a href="#" class="btn text-larger btn-dark bg-color px-4 py-2 rounded-pill"><i
+                            <a href="/hubungi-kami"
+                                class="btn text-larger btn-dark bg-color px-4 py-2 rounded-pill"><i
                                     class="bi-chat-dots color-2"></i><span class="d-none d-md-inline ms-2">Hubungi
                                     Kami</span></a>
                         </div>
@@ -157,35 +160,30 @@
                         <nav class="primary-menu me-lg-auto with-arrows order-12 order-lg-2">
 
                             <ul class="menu-container">
-                                <li class="menu-item current"><a class="menu-link" href="#">
+                                <li class="menu-item current"><a class="menu-link" href="/kenapa-kami">
                                         <div>Kenapa Kami?</div>
                                     </a></li>
-                                <li class="menu-item"><a class="menu-link" href="#">
+                                <li class="menu-item"><a class="menu-link" href="/produk-layanan">
                                         <div>Produk dan Layanan</div>
                                     </a>
                                     <ul class="sub-menu-container">
-                                        <li class="menu-item"><a class="menu-link" href="#">
-                                                <div><i class="bi-currency-dollar"></i>Emas</div>
+                                        <li class="menu-item"><a class="menu-link" href="/produk-layanan">
+                                                <div><i class="bi-coin"></i>Emas</div>
                                             </a></li>
-                                        <li class="menu-item"><a class="menu-link" href="#">
+                                        <li class="menu-item"><a class="menu-link" href="/produk-layanan">
                                                 <div><i class="bi-currency-dollar"></i>Umroh Haji</div>
                                             </a></li>
                                     </ul>
                                 </li>
-                                <li class="menu-item"><a class="menu-link" href="#">
+                                <li class="menu-item"><a class="menu-link" href="/perusahaan">
                                         <div>Perusahaan</div>
                                     </a></li>
-                                <li class="menu-item"><a class="menu-link" href="#">
+                                <li class="menu-item"><a class="menu-link" href="/berita">
                                         <div>Berita</div>
                                     </a></li>
                             </ul>
 
                         </nav><!-- #primary-menu end -->
-
-                        <form class="top-search-form" action="search.html" method="get">
-                            <input type="text" name="q" class="form-control" value=""
-                                placeholder="Type &amp; Hit Enter.." autocomplete="off">
-                        </form>
 
                     </div>
                 </div>
