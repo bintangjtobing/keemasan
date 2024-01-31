@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Member;
+use App\Models\PohonEmas;
 use Illuminate\Support\Facades\Route;
 
 use Spatie\Sitemap\Sitemap;
@@ -29,9 +31,19 @@ Route::get('/sitemap', function () {
     $sitemap->writeToFile(public_path('sitemap.xml'));
 });
 Route::get('/proxy-fetch', function () {
-    $response = Http::get('https://www.keemasan.co.id/fetch.php');
+    $member = Member::where('mb_status', '1')->inRandomOrder()->first();
 
-    // Forward the headers you need, ensure to not forward sensitive headers
-    return response($response->body())
-        ->header('Content-Type', $response->header('Content-Type'));
+    $nama_pendek = implode(" ", array_slice(explode(" ", strip_tags($member->mb_nama)), 0, 2));
+
+    $inv = PohonEmas::where('MID', $member->MID)->sum('gram');
+
+    $output = '';
+
+    if ($inv > 0) {
+        $output .= view('partials.notifications', ['nama_pendek' => $nama_pendek, 'inv' => $inv, 'action' => 'belanja'])->render();
+    } else {
+        $output .= view('partials.notifications', ['nama_pendek' => $nama_pendek, 'action' => 'bergabung'])->render();
+    }
+
+    return response($output);
 });
