@@ -134,9 +134,6 @@
             <div id="header-wrap">
                 <div class="container">
                     <div class="header-row justify-content-between">
-
-                        <!-- Logo
-      ============================================= -->
                         <div id="logo" class="mx-0 me-lg-5 order-2 order-lg-1">
                             <a href="/">
                                 <img class="logo-default"
@@ -144,59 +141,55 @@
                                     src="https://res.cloudinary.com/boxity-id/image/upload/w_1000/q_auto:best/f_auto/v1706443919/logo_nqbebi.png"
                                     alt="KeemasanID Logo">
                             </a>
-                        </div><!-- #logo end -->
 
-                        <div class="primary-menu-trigger order-1">
-                            <button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
-                                <span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
-                            </button>
+                            <div class="primary-menu-trigger order-1">
+                                <button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+                                    <span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+                                </button>
+                            </div>
+
+                            <div class="header-misc order-3">
+                                <a href="/hubungi-kami"
+                                    class="btn text-larger btn-dark bg-color px-4 py-2 rounded-pill"><i
+                                        class="bi-chat-dots color-2"></i><span class="d-none d-md-inline ms-2">Hubungi
+                                        Kami</span></a>
+                            </div>
+                            <nav class="primary-menu me-lg-auto with-arrows order-12 order-lg-2">
+
+                                <ul class="menu-container">
+                                    <li class="menu-item {{ Route::is('kenapaKami') ? 'active' : '' }}"><a
+                                            class="menu-link" href="/kenapa-kami">
+                                            <div>Kenapa Kami?</div>
+                                        </a></li>
+                                    <li class="menu-item {{ Route::is('produk') ? 'active' : '' }}"><a
+                                            class="menu-link" href="/produk-layanan">
+                                            <div>Produk dan Layanan</div>
+                                        </a>
+                                        <ul class="sub-menu-container">
+                                            <li class="menu-item"><a class="menu-link" href="/produk-layanan">
+                                                    <div><i class="bi-coin"></i>Emas</div>
+                                                </a></li>
+                                            <li class="menu-item"><a class="menu-link" href="/produk-layanan">
+                                                    <div><i class="bi-currency-dollar"></i>Umroh Haji</div>
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item {{ Route::is('perusahaan') ? 'active' : '' }}"><a
+                                            class="menu-link" href="/perusahaan">
+                                            <div>Perusahaan</div>
+                                        </a></li>
+                                    <li class="menu-item {{ Route::is('berita') ? 'active' : '' }}"><a
+                                            class="menu-link" href="/berita">
+                                            <div>Berita</div>
+                                        </a></li>
+                                </ul>
+
+                            </nav><!-- #primary-menu end -->
+
                         </div>
-
-                        <div class="header-misc order-3">
-                            <a href="/hubungi-kami"
-                                class="btn text-larger btn-dark bg-color px-4 py-2 rounded-pill"><i
-                                    class="bi-chat-dots color-2"></i><span class="d-none d-md-inline ms-2">Hubungi
-                                    Kami</span></a>
-                        </div>
-
-                        <!-- Primary Navigation
-      ============================================= -->
-                        <nav class="primary-menu me-lg-auto with-arrows order-12 order-lg-2">
-
-                            <ul class="menu-container">
-                                <li class="menu-item {{ Route::is('kenapaKami') ? 'active' : '' }}"><a
-                                        class="menu-link" href="/kenapa-kami">
-                                        <div>Kenapa Kami?</div>
-                                    </a></li>
-                                <li class="menu-item {{ Route::is('produk') ? 'active' : '' }}"><a class="menu-link"
-                                        href="/produk-layanan">
-                                        <div>Produk dan Layanan</div>
-                                    </a>
-                                    <ul class="sub-menu-container">
-                                        <li class="menu-item"><a class="menu-link" href="/produk-layanan">
-                                                <div><i class="bi-coin"></i>Emas</div>
-                                            </a></li>
-                                        <li class="menu-item"><a class="menu-link" href="/produk-layanan">
-                                                <div><i class="bi-currency-dollar"></i>Umroh Haji</div>
-                                            </a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item {{ Route::is('perusahaan') ? 'active' : '' }}"><a
-                                        class="menu-link" href="/perusahaan">
-                                        <div>Perusahaan</div>
-                                    </a></li>
-                                <li class="menu-item {{ Route::is('berita') ? 'active' : '' }}"><a class="menu-link"
-                                        href="/berita">
-                                        <div>Berita</div>
-                                    </a></li>
-                            </ul>
-
-                        </nav><!-- #primary-menu end -->
-
                     </div>
                 </div>
-            </div>
-            <div class="header-wrap-clone"></div>
+                <div class="header-wrap-clone"></div>
         </header><!-- #header end -->
         <div id="notification-area"></div>
         @yield('content')
@@ -311,12 +304,16 @@
                     url: '/proxy-fetch',
                     type: 'GET',
                     success: function(data) {
+                        console.log(data);
                         if (data) {
                             $('#notification-area').html(data);
                             $(".alert").fadeTo(5000, 500).slideUp(500, function() {
                                 $(this).remove();
                             });
                         }
+                    },
+                    error: function(xhr, status, error) {
+                        console.log("Error: " + error);
                     },
                     complete: function() {
                         setTimeout(fetchNotification, 5000);
