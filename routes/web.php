@@ -31,17 +31,25 @@ Route::get('/sitemap', function () {
     $sitemap->writeToFile(public_path('sitemap.xml'));
 });
 Route::get('/proxy-fetch', function () {
-    $member = Member::where('mb_status', '1')->inRandomOrder()->first();
+    try {
+        $member = Member::where('mb_status', '1')->inRandomOrder()->first();
 
-    $nama_pendek = implode(" ", array_slice(explode(" ", strip_tags($member->mb_nama)), 0, 2));
+        if (!$member) {
+            throw new \Exception("Member tidak ditemukan");
+        }
 
-    $inv = PohonEmas::where('MID', $member->MID)->sum('gram');
+        $nama_pendek = implode(" ", array_slice(explode(" ", strip_tags($member->mb_nama)), 0, 2));
+        $inv = PohonEmas::where('MID', $member->MID)->sum('gram');
 
-    $data = [
-        'nama_pendek' => $nama_pendek,
-        'inv' => $inv,
-        'action' => $inv > 0 ? 'belanja' : 'bergabung',
-    ];
+        $data = [
+            'nama_pendek' => $nama_pendek,
+            'inv' => $inv,
+            'action' => $inv > 0 ? 'belanja' : 'bergabung',
+        ];
 
-    return view('partials.notification', $data);
+        return view('partials.notification', $data);
+    } catch (\Exception $e) {
+        // Handle the exception
+        return response()->json(['error' => $e->getMessage()], 500);
+    }
 });

@@ -313,18 +313,16 @@
                     success: function(data) {
                         if (data) {
                             $('#notification-area').html(data);
-                            $(".alert").fadeTo(5000, 500).slideUp(500,
-                                function() { // 5 detik tampil, lalu hilang
-                                    $(this).remove();
-                                });
+                            $(".alert").fadeTo(5000, 500).slideUp(500, function() {
+                                $(this).remove();
+                            });
                         }
                     },
                     complete: function() {
-                        setTimeout(fetchNotification, 5000); // Polling setiap 5 detik
+                        setTimeout(fetchNotification, 5000);
                     }
                 });
             }
-
             fetchNotification();
         });
     </script>
