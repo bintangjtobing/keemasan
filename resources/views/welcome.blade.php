@@ -74,7 +74,7 @@
     <meta name="og:region" content="ID" />
     <meta name="og:postal-code" content="40261" />
     <meta name="og:country-name" content="Indonesia" />
-
+    <meta name="google-site-verification" content="Nv4nGc2C7ZQh94YtJ4UafIT21nBN81OdWlkDnkndW3g" />
 </head>
 
 <body class="stretched">
