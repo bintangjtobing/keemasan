@@ -305,34 +305,30 @@
  ============================================= -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        // JavaScript with jQuery
         $(document).ready(function() {
             function fetchNotification() {
                 $.ajax({
-                    url: '/proxy-fetch', // Your Laravel proxy route
+                    url: '/proxy-fetch',
                     type: 'GET',
                     success: function(data) {
-                        // If there's new data, display it
                         if (data) {
                             $('#notification-area').html(data);
+                            $(".alert").fadeTo(5000, 500).slideUp(500,
+                                function() { // 5 detik tampil, lalu hilang
+                                    $(this).remove();
+                                });
                         }
                     },
                     complete: function() {
-                        // Schedule the next request when the current one's complete
-                        setTimeout(fetchNotification, 5000); // Adjust timing as needed
+                        setTimeout(fetchNotification, 5000); // Polling setiap 5 detik
                     }
                 });
             }
 
-            // Initialize the polling function
             fetchNotification();
-            window.setTimeout(function() {
-                $(".alert").fadeTo(500, 0).slideUp(500, function() {
-                    $(this).remove();
-                });
-            }, 4000);
         });
     </script>
+
     <script src="{!! asset('js/plugins.min.js?' . rand(10000, 99999)) !!}"></script>
     <script src="{!! asset('js/functions.bundle.js?' . rand(10000, 99999)) !!}"></script>
 
