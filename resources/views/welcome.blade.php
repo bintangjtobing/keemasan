@@ -304,7 +304,6 @@
                     url: '/proxy-fetch',
                     type: 'GET',
                     success: function(data) {
-                        console.log("Data: " + data);
                         if (data) {
                             $('#notification-area').html(data);
                             $(".alert").fadeTo(5000, 500).slideUp(500, function() {
