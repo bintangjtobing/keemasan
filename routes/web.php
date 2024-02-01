@@ -47,7 +47,7 @@ Route::get('/proxy-fetch', function () {
             'action' => $inv > 0 ? 'belanja' : 'bergabung',
         ];
 
-        return view('partials.notification', $data);
+        return view('partials.notification', ['data' => $data]);
     } catch (\Exception $e) {
         // Handle the exception
         return response()->json(['error' => $e->getMessage()], 500);
