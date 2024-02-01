@@ -40,9 +40,9 @@ Route::get('/proxy-fetch', function () {
     $output = '';
 
     if ($inv > 0) {
-        $output .= view('partials.notifications', ['nama_pendek' => $nama_pendek, 'inv' => $inv, 'action' => 'belanja'])->render();
+        $output .= view('partials.notification', ['nama_pendek' => $nama_pendek, 'inv' => $inv, 'action' => 'belanja'])->render();
     } else {
-        $output .= view('partials.notifications', ['nama_pendek' => $nama_pendek, 'action' => 'bergabung'])->render();
+        $output .= view('partials.notification', ['nama_pendek' => $nama_pendek, 'action' => 'bergabung'])->render();
     }
 
     return response($output);
