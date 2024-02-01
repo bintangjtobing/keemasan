@@ -37,13 +37,11 @@ Route::get('/proxy-fetch', function () {
 
     $inv = PohonEmas::where('MID', $member->MID)->sum('gram');
 
-    $output = '';
+    $data = [
+        'nama_pendek' => $nama_pendek,
+        'inv' => $inv,
+        'action' => $inv > 0 ? 'belanja' : 'bergabung',
+    ];
 
-    if ($inv > 0) {
-        $output .= view('partials.notification', ['nama_pendek' => $nama_pendek, 'inv' => $inv, 'action' => 'belanja'])->render();
-    } else {
-        $output .= view('partials.notification', ['nama_pendek' => $nama_pendek, 'action' => 'bergabung'])->render();
-    }
-
-    return response($output);
+    return view('partials.notification', $data);
 });
